@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Devesh Kumar Singh</title>
+    <meta name="description" content="Explore engineering projects by Devesh Kumar Singh, including R.A.D.A.R-X, a gesture-driven robotic platform with multi-modal sensor fusion and autonomous safety overrides.">
+    <meta name="keywords" content="Devesh Kumar Singh Projects, R.A.D.A.R-X, Robotics, Embedded Systems, Sensor Fusion, ESP32">
+    <meta name="author" content="Devesh Kumar Singh">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header>
+        <p class="site-title">Devesh Kumar Singh</p>
+        <nav aria-label="Primary navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html" aria-current="page">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <h1>Projects</h1>
+
+        <article aria-labelledby="radar-x-heading">
+            <header>
+                <h2 id="radar-x-heading">R.A.D.A.R-X (Robotic Adaptive Detection and Response System)</h2>
+                <p>
+                    <span class="tag">Robotics</span>
+                    <span class="tag">Embedded Systems</span>
+                    <span class="tag">Sensor Fusion</span>
+                    <span class="tag">Hardware Integration</span>
+                    <span class="tag">C++</span>
+                    <span class="tag">Problem Solving</span>
+                </p>
+            </header>
+
+            <section aria-labelledby="radar-x-overview-heading">
+                <h3 id="radar-x-overview-heading">Project Overview</h3>
+                <p>
+                    R.A.D.A.R-X is an intelligent, gesture-driven robotic platform powered by an ESP32
+                    microcontroller. It merges multi-modal sensor fusion with deterministic safety
+                    overrides, allowing contactless hand-gesture navigation while autonomously preventing
+                    collisions and identifying stationary human presence in real time.
+                </p>
+            </section>
+
+            <section aria-labelledby="radar-x-functionality-heading">
+                <h3 id="radar-x-functionality-heading">Core Purpose &amp; Key Functionality</h3>
+                <dl>
+                    <dt>Contactless Gesture Navigation</dt>
+                    <dd>Decodes hand motions (directional swipes) using the APDS9960 sensor via I2C to dictate real-time motor maneuvers.</dd>
+
+                    <dt>Multi-Modal Spatial Awareness</dt>
+                    <dd>Fuses 24GHz mmWave radar (HLK-LD2410), laser Time-of-Flight LiDAR (VL53L0X), ultrasonic ranging (HC-SR04), and infrared proximity to eliminate sensor blind spots and detect still human micro-movements.</dd>
+
+                    <dt>Autonomous Safety Override</dt>
+                    <dd>Implements a three-tier risk management architecture (Safe / Warning / Danger). If any sensor registers an obstruction inside the critical threshold (&lt;15 cm), firmware instantly overrides user input, disconnects motor power via a relay kill-switch, and triggers audiovisual alarms.</dd>
+
+                    <dt>Adaptive Actuation</dt>
+                    <dd>Regulates dual DC motors through an L298N H-Bridge using pulse-width modulation (PWM) for speed calibration and tight turning radiuses.</dd>
+                </dl>
+            </section>
+
+            <section aria-labelledby="radar-x-skills-heading">
+                <h3 id="radar-x-skills-heading">Technical Skills &amp; Competencies Demonstrated</h3>
+                <dl>
+                    <dt>Firmware &amp; Embedded Systems</dt>
+                    <dd>Embedded C++, Arduino framework, multi-sensor polling loops, deterministic state machines, and fail-safe logic design.</dd>
+
+                    <dt>Hardware Protocols &amp; Interfacing</dt>
+                    <dd>I2C bus management with shared addressing, multi-baud UART hardware serial communication, and PWM driver integration.</dd>
+
+                    <dt>Sensor Fusion &amp; Signal Conditioning</dt>
+                    <dd>Integrating acoustic, optical, infrared, and radio frequency (RF) sensors into a unified proximity decision matrix.</dd>
+
+                    <dt>Power Electronics &amp; Circuit Design</dt>
+                    <dd>Dual-rail DC power distribution using LM2596 buck converters, resistive voltage dividing for 5V-to-3.3V logic protection, inductive load isolation, and common-ground topologies.</dd>
+
+                    <dt>Robotics &amp; Control Systems</dt>
+                    <dd>Closed-loop obstacle mitigation, H-Bridge motor driving, and physical relay emergency-stop integration.</dd>
+                </dl>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <address>
+            Contact: <a href="mailto:deveshkumar51080@gmail.com">deveshkumar51080@gmail.com</a> &middot;
+            <a href="https://www.linkedin.com/in/devesh-kumar-singh-b67500272" rel="noopener" target="_blank">LinkedIn</a>
+        </address>
+        <p>&copy; 2026 Devesh Kumar Singh. All rights reserved.</p>
+    </footer>
+</body>
+</html>
